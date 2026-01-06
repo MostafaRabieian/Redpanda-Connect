@@ -1,0 +1,23 @@
+annotations:
+  artifacthub.io/images: |
+    - name: redpanda
+      image: repo.bmi.ir:443/repository/linux_devops/redpandadata/connect:4.42.0
+    - name: busybox
+      image: repo.bmi.ir:443/repository/linux_devops/busybox:latest
+  artifacthub.io/license: Apache-2.0
+  artifacthub.io/links: |
+    - name: Documentation
+      url: https://docs.redpanda.com
+    - name: "Helm (>= 3.10.0)"
+      url: https://helm.sh/docs/intro/install/
+apiVersion: v2
+appVersion: 4.42.0
+description: Redpanda Connect Helm chart for Kubernetes
+maintainers:
+- name: redpanda-data
+  url: https://github.com/orgs/redpanda-data/people
+name: connect
+sources:
+- https://github.com/redpanda-data/helm-charts
+type: application
+version: 3.0.3
